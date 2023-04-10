@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>News aggregation</title>
+<meta http-equiv="Content-Language" content="ru" />
+<meta http-equiv="Content-Type" content="text/html; charset=charset=UTF-8" />
+<style type="text/css">
+* {
+    background-color:rgb(0, 255, 170);
+}
+
+#slidetabsmenu {
+float:left;
+width:100%;
+font-size:90%;
+line-height:normal;
+border-bottom: 1px solid gray;
+}
+
+* html #slidetabsmenu{
+margin-bottom: 1em;
+}
+
+#slidetabsmenu ul{
+list-style-type: none;
+margin:0;
+margin-left: 10px;
+padding:0;
+}
+
+#slidetabsmenu li{
+display:inline;
+margin:0;
+padding:0;
+}
+
+#slidetabsmenu a {
+float:left;
+background:url(tab-left.gif) no-repeat left top;
+margin:0;
+padding:0 0 0 9px;
+text-decoration:none;
+}
+
+#slidetabsmenu a span {
+float:left;
+display:block;
+background:url(tab-right.gif) no-repeat right top;
+padding:3px 14px 3px 5px;
+font-weight:bold;
+color:#3B3B3B;
+}
+
+
+#slidetabsmenu a span {float:none;}
+
+
+#slidetabsmenu a:hover span {
+color: black;
+}
+
+#slidetabsmenu #current a {
+background-position:0 -125px;
+}
+
+#slidetabsmenu #current a span {
+background-position:100% -125px;
+color: black;
+}
+
+#slidetabsmenu a:hover {
+background-position:0% -125px;
+}
+
+#slidetabsmenu a:hover span {
+background-position:100% -125px;
+}
+
+</style>
+
+<div id="slidetabsmenu">
+    <ul>
+        <li id="current"><a href="http://localhost:8080/menu" title="Выбор сайтов"><span>Выбор сайтов</span></a></li>
+        <li><a href="http://localhost:8080/agrig" title="Новости с сайтов"><span>Новости с сайтов</span></a></li>
+        <li><a href="http://localhost:8080/about" title="О нас"><span>О нас</span></a></li>
+    </ul>
+</div>
+
+
+</head>
+
+<body>
+    <h1> Агрегатор новостей   </h1>
+    <h3> Дипломный проект </h3>
+     <h4>
+        Создал:
+        <br>
+        Башлаев Анатолий Александрович
+    </h4>
+
+
+    
+</body>
+</html>
